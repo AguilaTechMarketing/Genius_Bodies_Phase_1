@@ -307,7 +307,7 @@
             </button>
         </div>
 
-        <!-- DAY 1 -->
+        <!-- DAY 1: Endurance -->
         <div class="mb-16">
             <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 gap-4">
                 <h3 class="font-mech text-2xl text-white pl-4 border-l-4 border-genius-gold">Day 1: Endurance</h3>
@@ -328,7 +328,7 @@
             </table>
         </div>
 
-        <!-- DAY 2 -->
+        <!-- DAY 2: Hypertrophy (4 Supersets) -->
         <div class="mb-16">
             <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 gap-4">
                 <h3 class="font-mech text-2xl text-white pl-4 border-l-4 border-genius-gold">Day 2: Hypertrophy</h3>
@@ -348,7 +348,7 @@
             </table>
         </div>
 
-        <!-- DAY 3 -->
+        <!-- DAY 3: Power -->
         <div class="mb-16">
             <h3 class="font-mech text-2xl text-white mb-4 pl-4 border-l-4 border-genius-gold">Day 3: Power</h3>
             <table class="w-full mech-table">
@@ -377,45 +377,63 @@
             </button>
         </div>
 
-        <!-- DAY 1 -->
+        <!-- DAY 1: Endurance (RPT) -->
         <div class="mb-16">
-            <h3 class="font-mech text-2xl text-white mb-4 pl-4 border-l-4 border-genius-gold">Day 1: Heavy Lower</h3>
+            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 gap-4">
+                <h3 class="font-mech text-2xl text-white pl-4 border-l-4 border-genius-gold">Day 1: Endurance (RPT)</h3>
+                <button type="button" class="btn-wrapper w-full sm:w-auto" onclick="launchTimer('rest-45'); return false;">
+                    <span class="btn-inner px-6 py-3 text-sm block">LAUNCH 45s REST TIMER</span>
+                </button>
+            </div>
             <table class="w-full mech-table">
-                <thead><tr><th>Exercise</th><th>Sets</th><th>Reps</th></tr></thead>
+                <thead><tr><th>Exercise</th><th>Sets</th><th>Reps (Set 1-4)</th><th>Rest</th></tr></thead>
                 <tbody>
-                    <tr><td>Squat</td><td>3</td><td>5</td></tr>
-                    <tr><td>Bench Press</td><td>3</td><td>10</td></tr>
-                    <tr><td>Barbell Row</td><td>3</td><td>10</td></tr>
+                    <tr><td>Back Squat</td><td>4</td><td>12 / 10 / 8 / 8</td><td>45s</td></tr>
+                    <tr><td>Bench Press</td><td>4</td><td>12 / 10 / 8 / 8</td><td>45s</td></tr>
+                    <tr><td>Seated OH Press</td><td>4</td><td>12 / 10 / 8 / 8</td><td>45s</td></tr>
+                    <tr><td>Upright Row</td><td>4</td><td>12 / 10 / 8 / 8</td><td>45s</td></tr>
+                    <tr><td>Suitcase Carry</td><td>4</td><td>30s / hand</td><td>15s</td></tr>
                 </tbody>
             </table>
         </div>
 
-        <!-- DAY 2 -->
+        <!-- DAY 2: Hypertrophy (60% 1RM) -->
         <div class="mb-16">
-            <h3 class="font-mech text-2xl text-white mb-4 pl-4 border-l-4 border-genius-gold">Day 2: Heavy Upper</h3>
+            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 gap-4">
+                <h3 class="font-mech text-2xl text-white pl-4 border-l-4 border-genius-gold">Day 2: Hypertrophy</h3>
+                <button type="button" class="btn-wrapper w-full sm:w-auto" onclick="launchTimer('rest-20'); return false;">
+                    <span class="btn-inner px-6 py-3 text-sm block">LAUNCH 20s REST TIMER</span>
+                </button>
+            </div>
+            <p class="mb-4 text-sm text-gray-400">Protocol: 60% 1RM. 4 Sets x 10 Reps. <strong>3-Second Negative.</strong></p>
             <table class="w-full mech-table">
-                <thead><tr><th>Exercise</th><th>Sets</th><th>Reps</th></tr></thead>
+                <thead><tr><th>Superset A</th><th>Superset B</th><th>Rest</th></tr></thead>
                 <tbody>
-                    <tr><td>Overhead Press</td><td>3</td><td>5</td></tr>
-                    <tr><td>Deadlift</td><td>3</td><td>5</td></tr>
-                    <tr><td>Chin Ups</td><td>3</td><td>Max</td></tr>
+                    <tr><td>RDL</td><td>Bicep Curl</td><td>20s A-B</td></tr>
+                    <tr><td>Incline Bench</td><td>Barbell Shrugs</td><td>20s A-B</td></tr>
+                    <tr><td>Leg Press</td><td>Bench Row</td><td>20s A-B</td></tr>
                 </tbody>
             </table>
         </div>
 
-        <!-- DAY 3 -->
+        <!-- DAY 3: Power -->
         <div class="mb-16">
-            <h3 class="font-mech text-2xl text-white mb-4 pl-4 border-l-4 border-genius-gold">Day 3: Full Power</h3>
+            <h3 class="font-mech text-2xl text-white mb-4 pl-4 border-l-4 border-genius-gold">Day 3: Power</h3>
             <table class="w-full mech-table">
-                <thead><tr><th>Exercise</th><th>Sets</th><th>Reps</th></tr></thead>
+                <thead><tr><th>Exercise</th><th>Sets</th><th>Reps</th><th>Rest</th></tr></thead>
                 <tbody>
-                    <tr><td>Squat</td><td>3</td><td>3</td></tr>
-                    <tr><td>Bench Press</td><td>3</td><td>3</td></tr>
-                    <tr><td>Deadlift</td><td>1</td><td>5</td></tr>
+                    <tr><td>Box Squat (Explosive)</td><td>5</td><td>6</td><td>2 min</td></tr>
+                    <tr><td>Hang Clean High Pull</td><td>5</td><td>8</td><td>2 min</td></tr>
+                    <tr><td><strong>FINISHER: Thrusters</strong></td><td>3</td><td>10</td><td>90s</td></tr>
                 </tbody>
             </table>
         </div>
     </div>
+
+    <footer class="w-full text-center py-8 mt-12 border-t border-gray-900">
+        <p class="text-gray-500 font-mech tracking-widest text-xs">&copy; 2025 GENIUS BODIES LLC</p>
+        <p class="text-genius-garnet font-mech tracking-widest text-[10px] opacity-80 mt-1">AGUILA TECH & MARKETING EXECUTION</p>
+    </footer>
 
     <!-- ================== TIMER OVERLAY ================== -->
     <div id="timer-modal" class="fixed inset-0 bg-black z-50 hidden flex flex-col items-center justify-center p-6">
@@ -464,7 +482,6 @@
             });
             const target = document.getElementById(viewId);
             target.classList.remove('hidden-section');
-            // Small timeout to allow display:block to apply before opacity transition
             setTimeout(() => target.classList.add('visible-section'), 10);
             window.scrollTo(0,0);
         }
@@ -688,7 +705,8 @@
                         // GIANT CIRCUIT LOGIC
                         if (currentPhase === 'prep' || currentPhase === 'rest') {
                             // SWITCH TO WORK (GOLD)
-                            currentPhase = 'work'; timeLeft = 45; 
+                            currentPhase = 'work';
+                            timeLeft = 45; 
                             const exName = circuitExercises[circuitStation];
                             statusLabel.innerText = exName.toUpperCase();
                             statusLabel.className = "text-genius-gold font-mech tracking-widest text-xl mb-2 text-center px-2";
@@ -698,9 +716,14 @@
                             // SWITCH TO REST (RED)
                             if (circuitStation >= 5) {
                                 if (currentRound >= 4) { finishTimer(); speak("Circuit complete."); return; }
-                                currentRound++; circuitStation=0; document.getElementById('round-display').innerText=`ROUND ${currentRound}/4`;
-                            } else { circuitStation++; }
-                            currentPhase = 'rest'; timeLeft = 30;
+                                currentRound++; 
+                                circuitStation = 0;
+                                document.getElementById('round-display').innerText = `ROUND ${currentRound}/4`;
+                            } else {
+                                circuitStation++;
+                            }
+                            currentPhase = 'rest';
+                            timeLeft = 30; 
                             const nextEx = circuitExercises[circuitStation];
                             statusLabel.innerText = "REST. NEXT: " + nextEx.toUpperCase();
                             statusLabel.className = "text-genius-garnet font-mech tracking-widest text-lg mb-2 text-center px-2";
@@ -712,7 +735,8 @@
                         // TABATA LOGIC
                         if (currentPhase === 'prep' || currentPhase === 'rest') {
                             // WORK (GOLD)
-                            currentPhase = 'work'; timeLeft = 20;
+                            currentPhase = 'work';
+                            timeLeft = 20;
                             const exName = tabataExercises[currentTabataExercise];
                             statusLabel.innerText = exName.toUpperCase();
                             statusLabel.className = "text-genius-gold font-mech tracking-widest text-xl mb-2 text-center px-2";
@@ -729,7 +753,10 @@
                                 statusLabel.innerText = "REST. NEXT: " + nextEx.toUpperCase();
                                 speak("Rest. Next exercise is " + nextEx);
                             } else {
-                                tabataSubRound++; timeLeft = 10; s.innerText = "REST"; speak("Rest.");
+                                tabataSubRound++;
+                                timeLeft = 10;
+                                statusLabel.innerText = "REST";
+                                speak("Rest.");
                             }
                             currentPhase = 'rest';
                             statusLabel.className = "text-genius-garnet font-mech tracking-widest text-xl mb-2 text-center px-2";
@@ -741,14 +768,14 @@
         }
 
         function finishTimer() {
-            clearInterval(timerInterval); isRunning=false;
+            clearInterval(timerInterval);
+            isRunning = false;
             document.getElementById('timer-display').innerText="00:00";
             document.getElementById('timer-status').innerText="COMPLETE";
             document.getElementById('timer-status').className="text-white font-mech tracking-widest text-xl mb-2";
             document.getElementById('timer-display-container').classList.remove('border-genius-garnet', 'border-genius-gold', 'border-white');
             document.getElementById('timer-display-container').classList.add('border-gray-800');
-            const btn = document.getElementById('btn-start');
-            btn.disabled = false; btn.style.opacity = "1";
+            const b=document.getElementById('btn-start'); b.disabled=false; b.style.opacity="1";
             if(wakeLock) wakeLock.release();
         }
     </script>
