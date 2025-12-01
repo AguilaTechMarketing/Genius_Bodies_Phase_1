@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Genius Bodies | Phase 1 Initiation</title>
+    
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5TXM7N1DGK"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-5TXM7N1DGK');
+    </script>
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- FONTS: Oxanium (Headlines) & Saira (Body) -->
@@ -119,6 +129,7 @@
             <div class="bg-gray-900/40 border border-gray-800 p-8 flex flex-col items-center text-center shape-tactical hover:border-genius-gold transition duration-300 group shadow-2xl relative overflow-hidden">
                 <div class="absolute inset-0 bg-camo opacity-30 pointer-events-none"></div>
                 <div class="mb-8 w-24 h-24 shape-diamond bg-black border-2 border-genius-gold flex items-center justify-center relative z-10">
+                    <!-- DNA Helix Icon -->
                     <svg class="w-12 h-12 icon-tech" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4M12 12a2 2 0 100-4 2 2 0 000 4z" /><path stroke-linecap="round" stroke-linejoin="round" d="M8 8.5A2.5 2.5 0 005.5 11 2.5 2.5 0 008 13.5M16 13.5a2.5 2.5 0 002.5-2.5A2.5 2.5 0 0016 8.5" opacity="0.6"/></svg>
                 </div>
                 <h3 class="font-mech text-2xl text-white mb-2 relative z-10">BODYWEIGHT</h3>
@@ -134,6 +145,7 @@
             <div class="bg-gray-900/40 border border-gray-800 p-8 flex flex-col items-center text-center shape-tactical hover:border-genius-gold transition duration-300 group shadow-2xl relative overflow-hidden">
                 <div class="absolute inset-0 bg-camo opacity-30 pointer-events-none"></div>
                 <div class="mb-8 w-24 h-24 shape-hexagon bg-black border-2 border-genius-gold flex items-center justify-center relative z-10">
+                    <!-- Kettlebell Icon -->
                     <svg class="w-10 h-10 icon-tech" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
                 </div>
                 <h3 class="font-mech text-2xl text-white mb-2 relative z-10">DB / KB SPLIT</h3>
@@ -149,6 +161,7 @@
             <div class="bg-gray-900/40 border border-gray-800 p-8 flex flex-col items-center text-center shape-tactical hover:border-genius-gold transition duration-300 group shadow-2xl relative overflow-hidden">
                 <div class="absolute inset-0 bg-camo opacity-30 pointer-events-none"></div>
                 <div class="mb-8 w-24 h-24 shape-shield bg-black border-2 border-genius-gold flex items-center justify-center pt-2 relative z-10">
+                    <!-- Barbell Icon -->
                     <svg class="w-12 h-12 icon-tech" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12h18M5 12v-4a1 1 0 00-1-1H3v10h1a1 1 0 001-1v-4zm14 0v-4a1 1 0 011-1h1v10h-1a1 1 0 01-1-1v-4z" /></svg>
                 </div>
                 <h3 class="font-mech text-2xl text-white mb-2 relative z-10">BARBELL</h3>
@@ -366,52 +379,39 @@
 
         <!-- DAY 1 -->
         <div class="mb-16">
-            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 gap-4">
-                <h3 class="font-mech text-2xl text-white pl-4 border-l-4 border-genius-gold">Day 1: Endurance (RPT)</h3>
-                <button type="button" class="btn-wrapper w-full sm:w-auto" onclick="launchTimer('rest-45'); return false;">
-                    <span class="btn-inner px-6 py-3 text-sm block">LAUNCH 45s REST TIMER</span>
-                </button>
-            </div>
+            <h3 class="font-mech text-2xl text-white mb-4 pl-4 border-l-4 border-genius-gold">Day 1: Heavy Lower</h3>
             <table class="w-full mech-table">
-                <thead><tr><th>Exercise</th><th>Sets</th><th>Reps (Set 1-4)</th><th>Rest</th></tr></thead>
+                <thead><tr><th>Exercise</th><th>Sets</th><th>Reps</th></tr></thead>
                 <tbody>
-                    <tr><td>Back Squat</td><td>4</td><td>12 / 10 / 8 / 8</td><td>45s</td></tr>
-                    <tr><td>Bench Press</td><td>4</td><td>12 / 10 / 8 / 8</td><td>45s</td></tr>
-                    <tr><td>Seated OH Press</td><td>4</td><td>12 / 10 / 8 / 8</td><td>45s</td></tr>
-                    <tr><td>Upright Row</td><td>4</td><td>12 / 10 / 8 / 8</td><td>45s</td></tr>
-                    <tr><td>Suitcase Carry</td><td>4</td><td>30s / hand</td><td>15s</td></tr>
+                    <tr><td>Squat</td><td>3</td><td>5</td></tr>
+                    <tr><td>Bench Press</td><td>3</td><td>10</td></tr>
+                    <tr><td>Barbell Row</td><td>3</td><td>10</td></tr>
                 </tbody>
             </table>
         </div>
 
         <!-- DAY 2 -->
         <div class="mb-16">
-            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 gap-4">
-                <h3 class="font-mech text-2xl text-white pl-4 border-l-4 border-genius-gold">Day 2: Hypertrophy</h3>
-                <button type="button" class="btn-wrapper w-full sm:w-auto" onclick="launchTimer('rest-20'); return false;">
-                    <span class="btn-inner px-6 py-3 text-sm block">LAUNCH 20s REST TIMER</span>
-                </button>
-            </div>
-            <p class="mb-4 text-sm text-gray-400">Protocol: 60% 1RM. 4 Sets x 10 Reps. <strong>3-Second Negative.</strong></p>
+            <h3 class="font-mech text-2xl text-white mb-4 pl-4 border-l-4 border-genius-gold">Day 2: Heavy Upper</h3>
             <table class="w-full mech-table">
-                <thead><tr><th>Superset A</th><th>Superset B</th><th>Rest</th></tr></thead>
+                <thead><tr><th>Exercise</th><th>Sets</th><th>Reps</th></tr></thead>
                 <tbody>
-                    <tr><td>RDL</td><td>Bicep Curl</td><td>20s A-B</td></tr>
-                    <tr><td>Incline Bench</td><td>Barbell Shrugs</td><td>20s A-B</td></tr>
-                    <tr><td>Leg Press</td><td>Bench Row</td><td>20s A-B</td></tr>
+                    <tr><td>Overhead Press</td><td>3</td><td>5</td></tr>
+                    <tr><td>Deadlift</td><td>3</td><td>5</td></tr>
+                    <tr><td>Chin Ups</td><td>3</td><td>Max</td></tr>
                 </tbody>
             </table>
         </div>
 
         <!-- DAY 3 -->
         <div class="mb-16">
-            <h3 class="font-mech text-2xl text-white mb-4 pl-4 border-l-4 border-genius-gold">Day 3: Power</h3>
+            <h3 class="font-mech text-2xl text-white mb-4 pl-4 border-l-4 border-genius-gold">Day 3: Full Power</h3>
             <table class="w-full mech-table">
-                <thead><tr><th>Exercise</th><th>Sets</th><th>Reps</th><th>Rest</th></tr></thead>
+                <thead><tr><th>Exercise</th><th>Sets</th><th>Reps</th></tr></thead>
                 <tbody>
-                    <tr><td>Box Squat (Explosive)</td><td>5</td><td>6</td><td>2 min</td></tr>
-                    <tr><td>Hang Clean High Pull</td><td>5</td><td>8</td><td>2 min</td></tr>
-                    <tr><td><strong>FINISHER: Thrusters</strong></td><td>3</td><td>10</td><td>90s</td></tr>
+                    <tr><td>Squat</td><td>3</td><td>3</td></tr>
+                    <tr><td>Bench Press</td><td>3</td><td>3</td></tr>
+                    <tr><td>Deadlift</td><td>1</td><td>5</td></tr>
                 </tbody>
             </table>
         </div>
@@ -486,7 +486,7 @@
         }
         
         // PASTE GOOGLE SCRIPT URL HERE
-        const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycby3ZaIGPrxomuA0h6xU79U4NXqSVXhORz-xuR6S-77_i2TT8wz77bxnK7FAAiOqZVFIhQ/exec";
+        const GOOGLE_SCRIPT_URL = "INSERT_YOUR_GOOGLE_SCRIPT_URL_HERE";
 
         function handleUpsell(e) {
             e.preventDefault();
@@ -674,6 +674,7 @@
                 const totalTime = (timerMode === 'circuit-bw' && currentPhase === 'work') ? 45 : 
                                   (timerMode === 'tabata' && currentPhase === 'work') ? 20 :
                                   (timerMode === 'finisher-60') ? 60 : 0;
+                // Use Math.floor for odd numbers (45/2 = 22.5)
                 if (totalTime > 0 && timeLeft === Math.floor(totalTime / 2)) speak("Halfway.");
 
                 // 3-2-1 Audio
@@ -687,8 +688,7 @@
                         // GIANT CIRCUIT LOGIC
                         if (currentPhase === 'prep' || currentPhase === 'rest') {
                             // SWITCH TO WORK (GOLD)
-                            currentPhase = 'work';
-                            timeLeft = 45; 
+                            currentPhase = 'work'; timeLeft = 45; 
                             const exName = circuitExercises[circuitStation];
                             statusLabel.innerText = exName.toUpperCase();
                             statusLabel.className = "text-genius-gold font-mech tracking-widest text-xl mb-2 text-center px-2";
@@ -698,26 +698,21 @@
                             // SWITCH TO REST (RED)
                             if (circuitStation >= 5) {
                                 if (currentRound >= 4) { finishTimer(); speak("Circuit complete."); return; }
-                                currentRound++; 
-                                circuitStation = 0;
-                                document.getElementById('round-display').innerText = `ROUND ${currentRound}/4`;
-                            } else {
-                                circuitStation++;
-                            }
-                            currentPhase = 'rest';
-                            timeLeft = 30; 
+                                currentRound++; circuitStation=0; document.getElementById('round-display').innerText=`ROUND ${currentRound}/4`;
+                            } else { circuitStation++; }
+                            currentPhase = 'rest'; timeLeft = 30;
                             const nextEx = circuitExercises[circuitStation];
                             statusLabel.innerText = "REST. NEXT: " + nextEx.toUpperCase();
                             statusLabel.className = "text-genius-garnet font-mech tracking-widest text-lg mb-2 text-center px-2";
                             circle.classList.remove('border-genius-gold'); circle.classList.add('border-genius-garnet');
                             speak("Rest. Next is " + nextEx);
                         }
-                    } else if (timerMode === 'tabata') {
+                    } 
+                    else if (timerMode === 'tabata') {
                         // TABATA LOGIC
                         if (currentPhase === 'prep' || currentPhase === 'rest') {
                             // WORK (GOLD)
-                            currentPhase = 'work';
-                            timeLeft = 20;
+                            currentPhase = 'work'; timeLeft = 20;
                             const exName = tabataExercises[currentTabataExercise];
                             statusLabel.innerText = exName.toUpperCase();
                             statusLabel.className = "text-genius-gold font-mech tracking-widest text-xl mb-2 text-center px-2";
@@ -727,18 +722,14 @@
                         } else {
                             // REST (RED)
                             if (tabataSubRound >= 8) {
-                                currentTabataExercise++;
-                                tabataSubRound = 1;
+                                currentTabataExercise++; tabataSubRound=1;
                                 if (currentTabataExercise >= 4) { finishTimer(); speak("Tabata complete."); return; }
                                 timeLeft = 10;
                                 const nextEx = tabataExercises[currentTabataExercise];
                                 statusLabel.innerText = "REST. NEXT: " + nextEx.toUpperCase();
                                 speak("Rest. Next exercise is " + nextEx);
                             } else {
-                                tabataSubRound++;
-                                timeLeft = 10;
-                                statusLabel.innerText = "REST";
-                                speak("Rest.");
+                                tabataSubRound++; timeLeft = 10; s.innerText = "REST"; speak("Rest.");
                             }
                             currentPhase = 'rest';
                             statusLabel.className = "text-genius-garnet font-mech tracking-widest text-xl mb-2 text-center px-2";
@@ -750,16 +741,14 @@
         }
 
         function finishTimer() {
-            clearInterval(timerInterval);
-            isRunning = false;
-            document.getElementById('timer-display').innerText = "00:00";
-            document.getElementById('timer-status').innerText = "COMPLETE";
-            document.getElementById('timer-status').className = "text-white font-mech tracking-widest text-xl mb-2";
+            clearInterval(timerInterval); isRunning=false;
+            document.getElementById('timer-display').innerText="00:00";
+            document.getElementById('timer-status').innerText="COMPLETE";
+            document.getElementById('timer-status').className="text-white font-mech tracking-widest text-xl mb-2";
             document.getElementById('timer-display-container').classList.remove('border-genius-garnet', 'border-genius-gold', 'border-white');
             document.getElementById('timer-display-container').classList.add('border-gray-800');
             const btn = document.getElementById('btn-start');
-            btn.disabled = false;
-            btn.style.opacity = "1";
+            btn.disabled = false; btn.style.opacity = "1";
             if(wakeLock) wakeLock.release();
         }
     </script>
