@@ -84,6 +84,28 @@
         }
         .btn-wrapper:hover .btn-inner { background-color: #b30602; box-shadow: inset 0 0 20px rgba(255, 191, 0, 0.2); }
 
+        /* Secondary Action Button (Support/Watch) */
+        .btn-secondary {
+            background-color: transparent;
+            border: 1px solid #FFBF00;
+            color: #FFBF00;
+            font-family: 'Oxanium', cursive;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 0.1em;
+            clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 10px 100%, 0 calc(100% - 10px), 0 10px);
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .btn-secondary:hover {
+            background-color: #FFBF00;
+            color: #960502;
+            font-weight: 700;
+        }
+
         /* --- UTILS --- */
         .icon-tech { stroke: #FFBF00; stroke-width: 1.5; fill: none; }
         .hidden-section { display: none !important; }
@@ -113,13 +135,21 @@
     <div id="view-dashboard" class="visible-section w-full max-w-5xl pt-8 pb-20">
        
         <!-- HEADER -->
-        <div class="text-center mb-14">
+        <div class="text-center mb-10">
             <img src="Genius_Bodies_Borromean_Rings_Garnet_Gold.png" alt="Genius Bodies" class="h-24 sm:h-32 mx-auto mb-8 object-contain">
            
             <div class="inline-block border-l-4 border-genius-garnet pl-4 text-left">
                 <h1 class="font-mech text-5xl sm:text-6xl font-bold text-white uppercase leading-none">Phase 1</h1>
                 <p class="text-genius-gold font-mech font-semibold tracking-[0.2em] text-sm uppercase mt-1">Initiation Protocol</p>
             </div>
+        </div>
+
+        <!-- DASHBOARD INTELLIGENCE BRIEFING BUTTON -->
+        <div class="flex justify-center mb-12">
+            <a href="https://www.youtube.com/shorts/8ntnLOzbGNE" target="_blank" class="btn-secondary group">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                Watch HUD Intelligence Briefing
+            </a>
         </div>
 
         <!-- TRACKS -->
@@ -129,7 +159,6 @@
             <div class="bg-gray-900/40 border border-gray-800 p-8 flex flex-col items-center text-center shape-tactical hover:border-genius-gold transition duration-300 group shadow-2xl relative overflow-hidden">
                 <div class="absolute inset-0 bg-camo opacity-30 pointer-events-none"></div>
                 <div class="mb-8 w-24 h-24 shape-diamond bg-black border-2 border-genius-gold flex items-center justify-center relative z-10">
-                    <!-- DNA Helix Icon -->
                     <svg class="w-12 h-12 icon-tech" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4M12 12a2 2 0 100-4 2 2 0 000 4z" /><path stroke-linecap="round" stroke-linejoin="round" d="M8 8.5A2.5 2.5 0 005.5 11 2.5 2.5 0 008 13.5M16 13.5a2.5 2.5 0 002.5-2.5A2.5 2.5 0 0016 8.5" opacity="0.6"/></svg>
                 </div>
                 <h3 class="font-mech text-2xl text-white mb-2 relative z-10">BODYWEIGHT</h3>
@@ -145,7 +174,6 @@
             <div class="bg-gray-900/40 border border-gray-800 p-8 flex flex-col items-center text-center shape-tactical hover:border-genius-gold transition duration-300 group shadow-2xl relative overflow-hidden">
                 <div class="absolute inset-0 bg-camo opacity-30 pointer-events-none"></div>
                 <div class="mb-8 w-24 h-24 shape-hexagon bg-black border-2 border-genius-gold flex items-center justify-center relative z-10">
-                    <!-- Kettlebell Icon -->
                     <svg class="w-10 h-10 icon-tech" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
                 </div>
                 <h3 class="font-mech text-2xl text-white mb-2 relative z-10">DB / KB SPLIT</h3>
@@ -161,7 +189,6 @@
             <div class="bg-gray-900/40 border border-gray-800 p-8 flex flex-col items-center text-center shape-tactical hover:border-genius-gold transition duration-300 group shadow-2xl relative overflow-hidden">
                 <div class="absolute inset-0 bg-camo opacity-30 pointer-events-none"></div>
                 <div class="mb-8 w-24 h-24 shape-shield bg-black border-2 border-genius-gold flex items-center justify-center pt-2 relative z-10">
-                    <!-- Barbell Icon -->
                     <svg class="w-12 h-12 icon-tech" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12h18M5 12v-4a1 1 0 00-1-1H3v10h1a1 1 0 001-1v-4zm14 0v-4a1 1 0 011-1h1v10h-1a1 1 0 01-1-1v-4z" /></svg>
                 </div>
                 <h3 class="font-mech text-2xl text-white mb-2 relative z-10">BARBELL</h3>
@@ -316,14 +343,26 @@
                 </button>
             </div>
             <table class="w-full mech-table">
-                <thead><tr><th>Exercise</th><th>Sets</th><th>Reps (RPT)</th><th>Rest</th></tr></thead>
+                <thead><tr><th>Exercise</th><th>Sets</th><th>Reps (RPT)</th><th>HUD</th></tr></thead>
                 <tbody>
-                    <tr><td>Goblet Squat</td><td>3</td><td>15 / 12 / 9</td><td>20s</td></tr>
-                    <tr><td>Floor Press</td><td>3</td><td>15 / 12 / 9</td><td>20s</td></tr>
-                    <tr><td>KB Swings</td><td>3</td><td>15 / 12 / 9</td><td>20s</td></tr>
-                    <tr><td>Arnold Presses</td><td>3</td><td>15 / 12 / 9</td><td>20s</td></tr>
-                    <tr><td>Bent Over Row</td><td>3</td><td>15 / 12 / 9</td><td>20s</td></tr>
-                    <tr><td>Weighted Trunk Twist</td><td>3</td><td>15 / 12 / 9</td><td>20s</td></tr>
+                    <tr>
+                        <td class="flex flex-col">
+                            <span class="font-bold">Goblet Squat</span>
+                            <span class="text-[10px] text-gray-500 uppercase">Load: Sternum Anchor</span>
+                        </td>
+                        <td>3</td>
+                        <td>15 / 12 / 9</td>
+                        <td>
+                            <a href="https://www.youtube.com/shorts/8ntnLOzbGNE" target="_blank" class="text-genius-gold font-mech text-[10px] uppercase border border-genius-gold px-2 py-1 rounded hover:bg-genius-gold hover:text-genius-garnet transition whitespace-nowrap">
+                                Watch HUD
+                            </a>
+                        </td>
+                    </tr>
+                    <tr><td>Floor Press</td><td>3</td><td>15 / 12 / 9</td><td>--</td></tr>
+                    <tr><td>KB Swings</td><td>3</td><td>15 / 12 / 9</td><td>--</td></tr>
+                    <tr><td>Arnold Presses</td><td>3</td><td>15 / 12 / 9</td><td>--</td></tr>
+                    <tr><td>Bent Over Row</td><td>3</td><td>15 / 12 / 9</td><td>--</td></tr>
+                    <tr><td>Weighted Trunk Twist</td><td>3</td><td>15 / 12 / 9</td><td>--</td></tr>
                 </tbody>
             </table>
         </div>
@@ -522,9 +561,6 @@
                     msg.classList.remove('hidden');
                 })
                 .catch(error => {
-                    // Apps Script often throws CORS errors even on success. 
-                    // If we get here, it usually means it worked but the browser blocked the response.
-                    // We assume success to keep UX smooth.
                     form.style.display = 'none';
                     msg.classList.remove('hidden');
                 });
@@ -536,7 +572,7 @@
         let timeLeft = 0;
         let isRunning = false;
         let currentRound = 1;
-        let currentPhase = 'prep'; // NEW: Explicit state tracking
+        let currentPhase = 'prep'; 
        
         let circuitStation = 0;
         let currentTabataExercise = 0;
@@ -618,14 +654,13 @@
             circuitStation = 0;
             currentTabataExercise = 0;
             tabataSubRound = 1;
-            currentPhase = 'prep'; // Reset state
+            currentPhase = 'prep';
            
             const display = document.getElementById('timer-display');
             const status = document.getElementById('timer-status');
             const circle = document.getElementById('timer-display-container');
             const roundDisplay = document.getElementById('round-display');
            
-            // RESET COLORS
             circle.classList.remove('border-genius-garnet', 'border-genius-gold', 'border-white');
             circle.classList.add('border-gray-800');
             status.className = "text-gray-500 font-mech tracking-widest text-xl mb-2 text-center px-2";
@@ -637,7 +672,6 @@
                 display.innerText = timeLeft < 10 ? `00:0${timeLeft}` : `00:${timeLeft}`;
             } else {
                 timeLeft = 10; display.innerText = "00:10"; status.innerText = "PREP";
-                // Show round for active timers immediately
                 if (timerMode === 'tabata') {
                     roundDisplay.innerText = "BURPEES - ROUND 1/8";
                     roundDisplay.classList.remove('hidden');
@@ -663,7 +697,6 @@
             const statusLabel = document.getElementById('timer-status');
             const circle = document.getElementById('timer-display-container');
            
-            // INITIAL STATE SETUP
             if (timerMode.startsWith('rest') || timerMode === 'finisher-60') {
                 currentPhase = 'work';
                 statusLabel.innerText = timerMode === 'finisher-60' ? "WORK" : "RESTING";
@@ -689,14 +722,11 @@
                 let display = timeLeft < 10 ? `00:0${timeLeft}` : (timeLeft === 60 ? "01:00" : `00:${timeLeft}`);
                 document.getElementById('timer-display').innerText = display;
 
-                // Halfway Audio
                 const totalTime = (timerMode === 'circuit-bw' && currentPhase === 'work') ? 45 :
                                   (timerMode === 'tabata' && currentPhase === 'work') ? 20 :
                                   (timerMode === 'finisher-60') ? 60 : 0;
-                // Use Math.floor for odd numbers (45/2 = 22.5)
                 if (totalTime > 0 && timeLeft === Math.floor(totalTime / 2)) speak("Halfway.");
 
-                // 3-2-1 Audio
                 if (timeLeft <= 3 && timeLeft > 0) playBeep(660, 0.1);
 
                 if (timeLeft < 0) {
@@ -704,9 +734,7 @@
                         finishTimer(); speak(timerMode === 'finisher-60' ? "Stop." : "Begin set."); playBeep(880);
                     }
                     else if (timerMode === 'circuit-bw') {
-                        // GIANT CIRCUIT LOGIC
                         if (currentPhase === 'prep' || currentPhase === 'rest') {
-                            // SWITCH TO WORK (GOLD)
                             currentPhase = 'work';
                             timeLeft = 45;
                             const exName = circuitExercises[circuitStation];
@@ -715,7 +743,6 @@
                             circle.classList.remove('border-white', 'border-genius-garnet'); circle.classList.add('border-genius-gold');
                             speak("Begin " + exName);
                         } else {
-                            // SWITCH TO REST (RED)
                             if (circuitStation >= 5) {
                                 if (currentRound >= 4) { finishTimer(); speak("Circuit complete."); return; }
                                 currentRound++;
@@ -734,9 +761,7 @@
                         }
                     }
                     else if (timerMode === 'tabata') {
-                        // TABATA LOGIC
                         if (currentPhase === 'prep' || currentPhase === 'rest') {
-                            // WORK (GOLD)
                             currentPhase = 'work';
                             timeLeft = 20;
                             const exName = tabataExercises[currentTabataExercise];
@@ -746,7 +771,6 @@
                             circle.classList.remove('border-white', 'border-genius-garnet'); circle.classList.add('border-genius-gold');
                             speak("Begin.");
                         } else {
-                            // REST (RED)
                             if (tabataSubRound >= 8) {
                                 currentTabataExercise++; tabataSubRound=1;
                                 if (currentTabataExercise >= 4) { finishTimer(); speak("Tabata complete."); return; }
